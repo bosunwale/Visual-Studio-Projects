@@ -32,6 +32,6 @@ namespace To_Do_WebApp.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool isDone { get; set; }
+        public Boolean isDone { get; set; }
     }
 }
