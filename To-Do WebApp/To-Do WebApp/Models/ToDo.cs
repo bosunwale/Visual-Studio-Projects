@@ -10,6 +10,6 @@
         public string Name { get; set; }
         public Boolean isDone { get; set; }
         public DateTime AddDate { get; set; }
-        public List<ToDo> ToDoList { get; set; }
+        public List<ToDo> ToDoList { get; } = new();
     }
 }
