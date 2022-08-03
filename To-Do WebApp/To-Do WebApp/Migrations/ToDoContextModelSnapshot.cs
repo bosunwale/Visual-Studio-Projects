@@ -40,7 +40,7 @@ namespace To_Do_WebApp.Migrations
 
                     b.HasIndex("ToDoId");
 
-                    b.ToTable("toDo");
+                    b.ToTable("ToDo");
                 });
 
             modelBuilder.Entity("To_Do_WebApp.Models.ToDo", b =>
