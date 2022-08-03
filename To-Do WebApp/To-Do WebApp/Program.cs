@@ -1,4 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using To_Do_WebApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddDbContext<ToDoContext>(options => options.UseSqlite(@"Data Source=E:\Visual Studio Db\mydb.db"));
+builder.Services.AddControllersWithViews();
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
